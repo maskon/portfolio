@@ -571,6 +571,7 @@ body {
 .projects__col {
     flex: 0 1 33.3333%;
     padding: 0 6px;
+    margin-bottom: 20px;
 }
 
 .projects__body {
