@@ -355,7 +355,7 @@ body {
 }
 
 .btn {
-    width: 140px;
+    min-width: 140px;
     height: 30px;
     background: #282C33;
     color: #FFFFFF;
@@ -395,7 +395,7 @@ body {
     color: #ABB2BF;
     padding: 5px 20px;
     border: 1px solid #ABB2BF;
-    margin: 2px 25px 140px 25px;
+    margin: 2px 15px 140px 15px;
 }
 
 .home__subtext span {
@@ -554,6 +554,11 @@ body {
 .projects__header__subtitle {
     font-size: 16px;
     color: #FFFFFF;
+    transition-duration: .2s;
+}
+
+.projects__header__subtitle:hover {
+    color: #969696;
 }
 
 .projects__item {
@@ -617,6 +622,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    text-align: center;
     margin: 0 10px;
 }
 
@@ -919,7 +925,7 @@ body {
 }
 
 .contacts__body {
-    max-width: 200px;
+    max-width: 220px;
     border: 1px solid #ABB2BF;
     margin-left: auto;
     padding: 10px;
