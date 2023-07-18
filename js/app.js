@@ -26,6 +26,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
     });
 });
 
+
 // Burger //
 const burger = document?.querySelector('[data-burger]');
 const nav = document?.querySelector('[data-nav]');
@@ -49,7 +50,5 @@ navItems.forEach(el => {
   nav?.classList.remove('nav--visible');
   });
 });
-
-
 
 
