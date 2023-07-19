@@ -517,12 +517,14 @@ body.no-scroll {
     }
 }
 
-
-
 /* Projects */
 
 .projects {
     padding-bottom: 100px;
+}
+
+.projects-works {
+    margin-top: 100px;
 }
 
 .projects__header {
