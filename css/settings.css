@@ -154,3 +154,9 @@ img {
   color: var(--second-text);
 }
 
+@media (max-width: 767px) {
+    .textarea {
+        height: 150px;
+    }
+}
+
