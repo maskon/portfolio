@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/settings.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <script defer src="libs/inputmask.min.js"></script>
+    <!-- <script defer src="libs/just-validate.min.js"></script> -->
+    <script defer src="libs/just-validate3.3.3.min.js"></script>
+    <!-- <script defer src="js/script.js"></script> -->
+    <script defer src="js/script-new.js"></script>
+    <!-- <script defer app.js> -->
+    <script defer src="js/app.js"></script>
     <title>Портфолио</title>
 </head>
 <body>
@@ -291,18 +299,30 @@
         <div class="modal__dialog" id="modal__dialog">
             <button class="modal__close" type="button" id="modal__close"><img src="img/svg/modal-close.svg" alt="Close"> </button>
             <div class="modal__body">
-                <h3 class="modal__title">Напиши мне</h3>
-                <form class="modal__form" action="/" method="post">
-                    <input class="form__input" name="login" type="text" placeholder="Ваше имя">
-                    <input class="form__input" name="input-tel" type="email" placeholder="Ваш email">
-                    <textarea class="form__textarea " name="input-tel" type="email" placeholder="Ваше сообщение"></textarea>
-                    <button class="btn btn-mobil" type="submit">Отправить</button>
+                <!-- Валидация и отправка формы -->
+                <form action="#" class="form" method="POST" enctype="multipart/form-data">
+                    <label class="form__label">
+                        <input class="input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+                    </label>
+                    <label class="form__label">
+                        <input class="input input-mail" type="email" data-validate-field="email" name="Email"
+                          placeholder="Введите email">
+                    </label>
+                    <label class="form__label">
+                        <input class="input input-tel" type="tel" data-validate-field="tel" name="Телефон"
+                          placeholder="Введите телефон">
+                    </label>
+                    <label class="form__label">
+                        <textarea class="textarea" name="Сообщение" id="" cols="30" rows="10"
+                          placeholder="Введите ваше сообщение"></textarea>
+                    </label>
+                      <input class="input" type="file" name="file[]" multiple id="myfile">
+                      <button class="button">Отправить</button>
                 </form>
             </div>
         </div>
     </div>
 
    </div>
-    <script src="js/app.js"></script>
 </body>
 </html>

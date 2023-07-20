@@ -1080,7 +1080,7 @@ body.no-scroll {
     height: auto;
     margin: auto;
     position: relative;
-    background-color: #fff;
+    background: #464646;
     transform: scale(0);
     transition: transform .2s linear;
 }
@@ -1099,7 +1099,6 @@ body.no-scroll {
     transition: transform .2s linear;
 }
 
-
 .modal__close img {
     width: 30px;
     height: 34px;
@@ -1108,39 +1107,33 @@ body.no-scroll {
     transform: translateY(-3px);
 }
 
-.modal__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
-    color: #333333;
-    text-align: center;
-    margin: 50px 0 0 0;
-}
-
-input, textarea {
-    width: 100%;
-    min-height: 50px;
-    border: 1px solid #505358;
-    border-radius: 10px;
-    margin: 5px 0;
-    padding: 0 10px;
-}
-
-textarea {
-    min-height: 150px;
-    padding-top: 10px;
-}
-
-input:focus, textarea:focus {
-    background-color: #f4f4f4;
-    border: 2px solid #1c1b1b;
-}
-
 .btn-mobil {
     min-width: 200px;
     min-height: 45px;
 }
 
+
+/* Валидация и отправка формы */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    padding: 60px 10px 25px 10px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.textarea {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 
 
