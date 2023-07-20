@@ -34,7 +34,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'maksblinov80@gmail.com'; // Логин на почте
-  $mail->Password   = 'fwqk jgkg sdrt hemb'; // Пароль на почте
+  $mail->Password   = 'fwqkjgkgsdrthemb'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
@@ -42,6 +42,8 @@ try {
 
   // Получатель письма
   $mail->addAddress('maskon12@yandex.ru');
+    $mail->addAddress('maskon-st1m@list.ru');
+    $mail->addAddress('maksblinov80@gmail.com');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
