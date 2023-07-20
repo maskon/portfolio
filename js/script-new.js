@@ -56,13 +56,26 @@ validation
     let formData = new FormData(event.target);
 
     console.log(...formData);
+    
+    // Вывод после отправки на Гитхаб
+            setTimeout(function() {
+            modalCall.classList.remove('show')
+            body.classList.remove('no-scroll')
+        },200)
 
-    let xhr = new XMLHttpRequest();
+    // Гитхаб отправка формы не идет
+    /* let xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           console.log('Отправлено');
+            
+            // Вывод после отправки
+            setTimeout(function() {
+            modalCall.classList.remove('show')
+            body.classList.remove('no-scroll')
+        },200)
         }
       }
     }
@@ -70,5 +83,5 @@ validation
     xhr.open('POST', 'mail.php', true);
     xhr.send(formData);
 
-    event.target.reset();
+    event.target.reset();*/
   });
